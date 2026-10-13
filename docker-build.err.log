@@ -1,0 +1,51 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 572B 0.0s done
+#1 DONE 0.1s
+
+#2 [auth] library/python:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim
+#3 DONE 15.2s
+
+#4 [1/5] FROM docker.io/library/python:3.12-slim@sha256:05cda9777409a9c3ffddd94a4c476b79f0769a0b4857f0c7ed9226b6800b0d6f
+#4 resolve docker.io/library/python:3.12-slim@sha256:05cda9777409a9c3ffddd94a4c476b79f0769a0b4857f0c7ed9226b6800b0d6f 0.0s done
+#4 DONE 0.1s
+
+#5 [2/5] WORKDIR /app
+#5 CACHED
+
+#6 [internal] load .dockerignore
+#6 transferring context: 135B 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 1.13kB 0.0s done
+#7 DONE 0.1s
+
+#8 [3/5] COPY requirements.txt ./
+#8 DONE 0.1s
+
+#9 [3/5] COPY requirements.txt ./
+#9 CACHED
+
+#10 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+#10 CACHED
+
+#11 [5/5] COPY . .
+#11 DONE 0.3s
+
+#12 exporting to image
+#12 exporting layers 0.1s done
+#12 exporting manifest sha256:78089a49cd92a665f34ef87d84eb2d56de1663b90743fefda5ff6026ac4128d7
+#12 exporting manifest sha256:78089a49cd92a665f34ef87d84eb2d56de1663b90743fefda5ff6026ac4128d7 0.0s done
+#12 exporting config sha256:f1ed42bc406e3ee494105df6264de9aec10e35abee18ef0e1218d99f99a5af2b 0.0s done
+#12 exporting attestation manifest sha256:546792306ce5d7757eb2aa832cf5fa5ca04275bdadbfa77a2efb77d96e59423d 0.0s done
+#12 exporting manifest list sha256:def95b47af37614f1a07abc99848cf2528aae91329ded05bb4e242d34c7c76b8 0.0s done
+#12 naming to docker.io/library/orbitcart-operations:local done
+#12 unpacking to docker.io/library/orbitcart-operations:local 0.0s done
+#12 DONE 0.3s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/rsg10gayo8ovc2m6a37qe06xj
